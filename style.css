@@ -1,0 +1,201 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(to bottom, rgb(251,239,118), rgb(254,194,136));
+    transition:0.4s;
+}
+
+/* DARK MODE */
+.dark-mode{
+    background:#111;
+    color:white;
+}
+
+.dark-mode header,
+.dark-mode footer{
+    background:#000;
+}
+
+header{
+    background:rgb(250,92,92);
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    font-weight:500;
+    cursor:pointer;
+}
+
+nav a:hover{
+    color:rgb(251,239,118);
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:120px 20px;
+    background:linear-gradient(135deg,rgb(250,92,92),rgb(253,138,107));
+    color:white;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 30px;
+    background:rgb(251,239,118);
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+}
+
+/* SECTIONS */
+.section{
+    padding:80px 10%;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.stats{
+    background:rgb(254,194,136);
+    padding:70px 10%;
+    text-align:center;
+}
+
+footer{
+    background:rgb(250,92,92);
+    color:white;
+    padding:40px 10%;
+    text-align:center;
+}
+
+/* Scroll Top Button */
+#topBtn{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    background:rgb(250,92,92);
+    color:white;
+    border:none;
+    padding:12px 18px;
+    border-radius:50%;
+    cursor:pointer;
+    display:none;
+}
+
+/* Modal */
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content{
+    background:white;
+    padding:40px;
+    width:60%;
+    border-radius:15px;
+}
+
+.close{
+    float:right;
+    cursor:pointer;
+    font-weight:bold;
+}
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px){
+
+    header{
+        flex-direction:column;
+        padding:15px;
+        text-align:center;
+    }
+
+    nav{
+        margin-top:10px;
+    }
+
+    nav a{
+        margin:10px;
+        display:inline-block;
+    }
+
+    .hero{
+        padding:80px 15px;
+    }
+
+    .hero h2{
+        font-size:26px;
+    }
+
+    .hero p{
+        font-size:14px;
+    }
+
+    .section{
+        padding:50px 20px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .stats{
+        padding:50px 20px;
+    }
+
+    .modal-content{
+        width:90%;
+        padding:20px;
+    }
+
+    #topBtn{
+        bottom:20px;
+        right:20px;
+    }
+
+}

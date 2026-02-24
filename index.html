@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI & Brain Impact</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>AI Brain Study</h1>
+    <nav>
+        <a onclick="scrollToSection('home')">Home</a>
+        <a onclick="scrollToSection('impact')">Impact</a>
+        <a onclick="scrollToSection('stats')">Stats</a>
+        <a onclick="openModal()">Research</a>
+        <a onclick="toggleDarkMode()">🌙</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h2>AI & Short Videos: Long Term Brain Impact</h2>
+    <p>Understanding dopamine loops, attention span decline, and cognitive rewiring caused by algorithmic content.</p>
+    <div class="btn" onclick="impactTest()">Test Your Attention</div>
+</section>
+
+<section class="section" id="impact">
+    <h2>Major Long-Term Effects</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Reduced Attention</h3>
+            <p>Fast content rewires focus capacity over time.</p>
+        </div>
+        <div class="card">
+            <h3>Dopamine Loop</h3>
+            <p>AI optimizes addictive engagement cycles.</p>
+        </div>
+        <div class="card">
+            <h3>Memory Impact</h3>
+            <p>Short bursts reduce deep information retention.</p>
+        </div>
+    </div>
+</section>
+
+<section class="stats" id="stats">
+    <h2>Usage Statistics</h2>
+    <h3 id="minutes">0</h3>
+    <p>Average Daily Short Video Minutes</p>
+</section>
+
+<footer>
+    <h2>AI Awareness Initiative</h2>
+    <p>Understanding technology before it understands us.</p>
+    <p>© 2026 Cognitive Research Project</p>
+</footer>
+
+<button id="topBtn" onclick="scrollToTop()">↑</button>
+
+<!-- Modal -->
+<div class="modal" id="researchModal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">X</span>
+        <h2>Research Insights</h2>
+        <p>Studies show frequent short-form content consumption correlates with decreased sustained attention and increased impulsivity over time.</p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
