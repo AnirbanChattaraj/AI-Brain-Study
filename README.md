@@ -76,9 +76,9 @@ Mobile-friendly modal
 
 HTML5
 
-CSS3 (Flexbox + Grid + Media Queries)
+CSS3 
 
-Vanilla JavaScript
+ JavaScript
 
 Google Fonts (Poppins)
 
