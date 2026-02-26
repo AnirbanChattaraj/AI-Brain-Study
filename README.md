@@ -8,7 +8,7 @@ This project highlights attention span decline, dopamine dependency, cognitive r
 
 “Understanding technology before it understands us.”
 
-This website demonstrates how algorithm-driven short videos influence:
+This website demonstrates how algorithm-driven short videos influence:-
 
 🧠 Attention span
 
